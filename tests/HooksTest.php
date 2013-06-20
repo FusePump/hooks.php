@@ -4,7 +4,8 @@
  *
  * @author Jonathan Kim <jonathan.kim@fusepump.com>
  */
-require_once __DIR__.'/../src/Hooks.php';
+require_once __DIR__.'/../src/FusePump/Hooks/Hooks.php';
+use \FusePump\Hooks\Hooks as Hooks;
 /**
  * Hooks test
  *
@@ -22,7 +23,7 @@ class HooksTest extends PHPUnit_Framework_TestCase
         Hooks::setInstance(null);
         $hooks = Hooks::getInstance();
 
-        $this->assertInstanceOf('Hooks', $hooks);
+        $this->assertInstanceOf('\FusePump\Hooks\Hooks', $hooks);
     }
 
     /**

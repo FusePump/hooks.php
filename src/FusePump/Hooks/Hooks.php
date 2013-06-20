@@ -4,6 +4,7 @@
  *
  * @author Jonathan Kim <jonathan.kim@fusepump.com>
  */
+namespace FusePump\Hooks;
 /**
  * Hooks
  *
@@ -58,7 +59,7 @@ class Hooks
     public function addHook($key, $func)
     {
         if (!is_callable($func)) {
-            throw new Exception('Hook function is not callable');
+            throw new \Exception('Hook function is not callable');
         }
 
         if (!array_key_exists($key, $this->hooks)) {

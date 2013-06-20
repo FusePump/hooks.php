@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpunit colors="true"
+         strict="true"
+         verbose="true">
+
+    <logging>
+        <log type="coverage-html"
+             target="tests_coverage"
+             charset="UTF-8"
+             yui="true"
+             highlight="true"
+        />
+    </logging>
+
+    <testsuite name="hooks">>
+        <directory>tests</directory>
+    </testsuite>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">.</directory>
+            <exclude>
+                <directory suffix=".php">/usr/share/php/</directory>
+                <directory suffix=".php">tests/</directory>
+                <directory suffix=".php">build/</directory>
+                <directory suffix=".php">vendor/</directory>
+                <directory suffix=".php">example/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+</phpunit>

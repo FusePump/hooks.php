@@ -36,6 +36,18 @@ class Hooks
     }
 
     /**
+     * Set instance
+     *
+     * @param object $instance - instance object to set
+     *
+     * @return void
+     */
+    public static function setInstance($instance)
+    {
+        self::$instance = $instance;
+    }
+
+    /**
      * Add hook
      *
      * @param function $key  - hook name
@@ -72,14 +84,19 @@ class Hooks
             $args = func_get_args();
             unset($args[0]);
 
-            // if an array of hooks loop through it
-            if (is_array($this->hooks[$key])) {
-                foreach ($this->hooks[$key] as $hook) {
-                    call_user_func_array($hook, $args);
-                }
-            } else {
-                call_user_func_array($this->hooks[$key], $args);
+            foreach ($this->hooks[$key] as $hook) {
+                call_user_func_array($hook, $args);
             }
         }
+    }
+
+    /**
+     * Get hooks
+     *
+     * @return array hooks
+     */
+    public function getHooks()
+    {
+        return $this->hooks;
     }
 }

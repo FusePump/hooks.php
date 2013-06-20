@@ -1,0 +1,17 @@
+{
+    "name": "fusepump/hooks",
+    "description": "Class to register and call hooks",
+    "authors": [
+        {
+            "name": "Jonathan Kim",
+            "email": "jonathan.kim@fusepump.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    }
+}

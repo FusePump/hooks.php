@@ -12,7 +12,7 @@
         />
     </logging>
 
-    <testsuite name="hooks">>
+    <testsuite name="hooks">
         <directory>tests</directory>
     </testsuite>
 

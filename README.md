@@ -2,6 +2,8 @@
 
 Hooks class to add and call hooks.
 
+[![Build Status](https://travis-ci.org/FusePump/hooks.php.png?branch=master)](https://travis-ci.org/FusePump/hooks.php)
+
 ## Installation
 
 Add this to your `composer.json`

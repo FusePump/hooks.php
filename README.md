@@ -11,10 +11,11 @@ Add this to your `composer.json`
 ```
 {
     "require": {
-        "fusepump/hooks": "0.1.*"
+        "fusepump/hooks.php": "0.1.*"
     }
 }
 ```
+
 Then run:
 
     composer install

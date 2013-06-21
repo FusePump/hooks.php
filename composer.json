@@ -1,6 +1,8 @@
 {
     "name": "fusepump/hooks",
     "description": "Class to register and call hooks",
+    "homepage": "https://github.com/FusePump/hooks.php",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jonathan Kim",

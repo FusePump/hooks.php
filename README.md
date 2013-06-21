@@ -44,3 +44,6 @@ $hooks = \FusePump\Hooks\Hooks::getInstance();
 $hooks->callHook('foo', 'bar');
 ```
 
+## License
+
+MIT

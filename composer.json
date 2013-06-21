@@ -1,5 +1,5 @@
 {
-    "name": "fusepump/hooks",
+    "name": "fusepump/hooks.php",
     "description": "Class to register and call hooks",
     "homepage": "https://github.com/FusePump/hooks.php",
     "license": "MIT",

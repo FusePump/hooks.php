@@ -2,7 +2,9 @@
 
 Hooks class to add and call hooks.
 
-# Installation
+## Installation
+
+Add this to your `composer.json`
 
 ```
 {
@@ -17,7 +19,7 @@ Then run:
 
 And finally add `require 'vendor/autoload.php'` to your php file;
 
-# Example
+## Example
 
 ```php
 $hooks = new \FusePump\Hooks\Hooks();
